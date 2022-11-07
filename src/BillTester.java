@@ -3,11 +3,13 @@ public class BillTester
     public static void main(String[] args)
     {
         double cost = 125.45;
+        int numPeople = 10;
 
         // Create a bill for a birthday dinner for 10 people
+        Bill birthdayDinner = new Bill(cost, 10);
 
         System.out.println("Birthday Dinner");
-        System.out.println();
+        System.out.println(birthdayDinner.toString());
 
         // Add the tip
 
@@ -35,10 +37,11 @@ public class BillTester
         System.out.println();
 
         // Add the tip
+        birthdayDinner.addTip();
         // Notice the difference in the final amount
 
         System.out.println("\nBirthday Dinner after tip");
-        System.out.println();
+        System.out.println(birthdayDinner);
 
 
     }
