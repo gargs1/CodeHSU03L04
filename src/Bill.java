@@ -20,8 +20,17 @@ class Bill
         if(totalCustomers >= 8) {
             costOfMeal *= 1.25;
         }
+        else if(totalCustomers >= 4) {
+            costOfMeal *= 1.2;
+        }
+        else if(totalCustomers >= 2) {
+            costOfMeal *= 1.05;
+        }
     }
 
+        public double getCost() {
+        return costOfMeal;
+        }
 
     public String toString()
     {
